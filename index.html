@@ -73,7 +73,7 @@
 		<header class="header">
 			<div class="container">
 				<nav class="header__nav">
-					<div class="sidebar__open-btn open-btn">
+					<div class="sidebar__open-btn open-btn animate-on-load item-1">
 						<svg viewBox="0 0 67 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M4.71831 0H67L62.2817 3H0L4.71831 0Z" fill="#D9D9D9" />
 							<path d="M4.71831 8H67L62.2817 11H0L4.71831 8Z" fill="#D9D9D9" />
@@ -81,18 +81,22 @@
 						</svg>
 					</div>
 				</nav>
-				<div class="header__content">
+				<div class="header__content animate-on-load item-2">
 					<div class="header__logo">
 						<picture>
 							<source srcset="./img/header-image/logo.webp 1x, ./img/header-image/logo@2x.webp 2x" type="image/webp" />
 							<source srcset="./img/header-image/logo.png 1x, ./img/header-image/logo@2x.png 2x" type="image/png" />
-							<img src="./img/header-image/logo.png" srcset="./img/header-image/logo@2x.png" alt="логотип" class="header__logo-img" />
+							<img src="./img/header-image/logo.png" srcset="./img/header-image/logo@2x.png" alt="логотип" class="header__logo-img animate-on-load item-3" />
 						</picture>
-						<h1 class="header__logo-title">промышленный дизайн</h1>
+						<h1 class="header__logo-title animate-on-load item-4">
+							промышленный дизайн
+						</h1>
 					</div>
 				</div>
 			</div>
 		</header>
+
+		<button id="scrollToTopBtn" title="Наверх">&#8593;</button>
 		<div class="sidebar-overlay" id="overlay"></div>
 		<div class="sidebar" id="sidebar">
 			<div class="sidebar__close-btn close-btn">
@@ -460,11 +464,11 @@
 		</main>
 		<footer class="footer" id="contacts">
 			<div class="container">
-				<h4 class="footer__title">контакты</h4>
+				<h4 class="footer__title animate-on-scroll" id="footerTitle">контакты</h4>
 				<div class="footer__content">
-					<p>marketing@mgcgroup.ru</p>
-					<p>zakaz@mgcgroup.ru</p>
-					<p>akozina@mgcgroup.ru</p>
+					<a class="animate-on-scroll" href="mailto:marketing@mgcgroup.ru">marketing@mgcgroup.ru</a>
+					<a class="animate-on-scroll" href="mailto:zakaz@mgcgroup.ru">zakaz@mgcgroup.ru</a>
+					<a class="animate-on-scroll" href="mailto:akozina@mgcgroup.ru">akozina@mgcgroup.ru</a>
 				</div>
 			</div>
 		</footer>
